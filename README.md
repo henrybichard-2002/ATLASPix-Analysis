@@ -7,6 +7,8 @@ This repository contains the data analysis pipeline for characterizing ATLASpix 
 * `data/`: Decoded `.dat` list-mode data files (ignored by Git).
 * `results/`: Output plots and generated datasets.
 * `requirements.txt`: Python package dependencies.
+## Project Dependency Map
+![Dependency Graph](./src/dependencies.svg)
 
 ## Data Loading
 All raw data should be loaded from the `data/` directory using the optimized functions provided in `data_loading_optimized.py`. This ensures efficient memory management and proper NumPy array structuring before passing the data into the analytical pipelines.
