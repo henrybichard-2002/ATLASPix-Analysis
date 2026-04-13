@@ -1,0 +1,20 @@
+# IDEs and Cache
+.spyproject/
+__pycache__/
+*.pyc
+
+# Folders to ignore entirely
+data/
+results/
+
+# Global file types to ignore 
+*.dat
+*.csv
+*.pkl
+*.pdf
+*.png
+*.html
+
+# OS generated files
+.DS_Store
+Thumbs.db
