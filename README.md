@@ -42,9 +42,9 @@ The analysis scripts expect tabular, list-mode data (tab or space delimited). Ea
 * **Layer**: (uint8) Sensor layer index, constrained to values 1, 2, 3, or 4.
 * **Column**: (uint8) Pixel column address, expected range 0 to 131.
 * **Row**: (uint16) Pixel row address, expected range 0 to 372.
-* **TS**: (uint16) Coarse timestamp.
-* **TS1**: (int8) Sub-timestamp 1.
-* **TS2**: (uint16) Sub-timestamp 2 (Fine timestamp).
+* **TS**: (uint16) Leading edge Coarse timestamp.
+* **TS1**: (int8) Peak-Amp?? Sub-timestamp 1.
+* **TS2**: (uint16) Trailing Edge Sub-timestamp 2 (Fine timestamp).
 * **TriggerTS**: (uint64) Trigger timestamp.
 * **TriggerID**: (uint64) Macroscopic event trigger identifier.
 * **ext_TS**: (uint64) External timestamp 1.
