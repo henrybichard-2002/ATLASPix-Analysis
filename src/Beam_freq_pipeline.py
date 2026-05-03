@@ -392,8 +392,13 @@ def plot_tot_ratio_vs_ptof(data: dict, filename: str, tot_threshold: int = 50):
 if __name__ == "__main__":
     # --- CONFIGURATION ---
     # Path to the specific file
-    target_file = r"C:\Users\henry\ATLASpix-analysis\data\202204061308_udp_beamonall_6Gev_kit_0_decode.dat" ###perp
+    #target_file = r"C:\Users\henry\ATLASpix_analysis\data\202204061308_udp_beamonall_6Gev_kit_0_decode.dat" ###perp
     #target_file = r"C:\Users\henry\ATLASpix-analysis\data\202204071531_udp_beamonall_angle6_6Gev_kit_4_decode.dat"
+    #target_file = r"C:\Users\henry\ATLASpix_analysis\data\202204080517_udp_beamonall_long_term_6Gev_kit_1_decode.dat"
+    #target_file = r"C:\Users\henry\ATLASpix_analysis\data\202204100525_udp_interleaved_kit_7_decode.dat"
+    
+    
+    target_file = r"C:\Users\henry\ATLASpix_analysis\data\UDP_data_TB_20220405_20_10_beam_energy6GeV_0_decode.dat"
     
     n_lines_to_load = 50000000
     
@@ -411,7 +416,7 @@ if __name__ == "__main__":
         exit()
 
     # --- 2. RUN PIPELINE ---
-    thresholds = [500, 500, 800, 800] 
+    thresholds = [300, 700, 800, 700] 
 
     pipeline = BunchClassifierPipeline(
         trigger_ts_unit_s=25e-9,
